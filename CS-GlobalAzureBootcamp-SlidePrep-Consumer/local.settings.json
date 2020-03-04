@@ -1,0 +1,9 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+      "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+      "cs-globalazurebootcamp-slideprep": "Endpoint=sb://cs-globalazurebootcamp-slideprep.servicebus.windows.net/;SharedAccessKeyName=accountinternal_key;SharedAccessKey=QgMK+lNMiA5goQmD/xsYZZLnQzZk4nTRlCRfSVeo/k4=",
+      "cs-globalazurebootcamp-slideprep-account": "Endpoint=sb://cs-globalazurebootcamp-slideprep.servicebus.windows.net/;SharedAccessKeyName=account-key;SharedAccessKey=quAkkajwnj02GX2ntWlWvGYobchqnIqNxwOO0dNlTR4="
+    }
+}
