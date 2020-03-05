@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/CS-GlobalAzureBootcamp-SlidePrep
+/CS-GlobalAzureBootcamp-SlidePrep-BatchSender/obj
+/CS-GlobalAzureBootcamp-SlidePrep-BatchSender/bin/Debug/netcoreapp3.1

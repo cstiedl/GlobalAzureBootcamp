@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-GlobalAzureBootcamp-SlidePrep-Consumer", "CS-GlobalAzureBootcamp-SlidePrep-Consumer.csproj", "{070841CE-9776-4EBE-B3E6-54F7A6BB3FD0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS-GlobalAzureBootcamp-SlidePrep-Consumer", "CS-GlobalAzureBootcamp-SlidePrep-Consumer\CS-GlobalAzureBootcamp-SlidePrep-Consumer.csproj", "{070841CE-9776-4EBE-B3E6-54F7A6BB3FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-GlobalAzureBootcamp-SlidePrep-BatchSender", "CS-GlobalAzureBootcamp-SlidePrep-BatchSender\CS-GlobalAzureBootcamp-SlidePrep-BatchSender.csproj", "{2DA172D8-1728-4609-B580-14E3ADF0663E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{070841CE-9776-4EBE-B3E6-54F7A6BB3FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{070841CE-9776-4EBE-B3E6-54F7A6BB3FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{070841CE-9776-4EBE-B3E6-54F7A6BB3FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DA172D8-1728-4609-B580-14E3ADF0663E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA172D8-1728-4609-B580-14E3ADF0663E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA172D8-1728-4609-B580-14E3ADF0663E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA172D8-1728-4609-B580-14E3ADF0663E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
