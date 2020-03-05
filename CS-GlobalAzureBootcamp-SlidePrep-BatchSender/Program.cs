@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Azure.ServiceBus;
+using Nito.AsyncEx;
 
 namespace CS_GlobalAzureBootcamp_SlidePrep_BatchSender
 {
@@ -22,6 +23,23 @@ namespace CS_GlobalAzureBootcamp_SlidePrep_BatchSender
         {
             Console.WriteLine("Starting batch sending ...");
 
+            // V1: Send batches of 1000 after each other until 10.000 reached.
+            await SendBatch();
+
+            // V2: Using groups where each group sends batches of 1000 until 10.000 messages reached, but
+            // groups are processed in parallel. Below thus, up to 5 baches of 1000 messages each, are sent in parallel.
+            /*
+            int parallelBatches = 5;
+            Parallel.ForEach(Enumerable.Range(1, parallelBatches).ToList(), i => 
+            {
+                AsyncContext.Run(SendBatch);
+                Console.WriteLine("Group {0} of batches has been sent", i);
+            });
+            */
+        }
+
+        private static async Task SendBatch()
+        {
             var stopwatch = new Stopwatch();
             stopwatch.Start();
 
@@ -42,6 +60,5 @@ namespace CS_GlobalAzureBootcamp_SlidePrep_BatchSender
             Console.WriteLine($"{stopwatch.ElapsedMilliseconds}ms to send {messages} messages");
             stopwatch.Reset();
         }
-
     }
 }
